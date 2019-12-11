@@ -1,0 +1,47 @@
+// re-usable colors
+$primary-color: #349bb1;
+$primary-color-light: #76a6b8;
+$secondary-color: #cb51c4;
+$tertiary-color: #FBB430;
+
+$twitch-purple: #6441a5;
+
+// text attributes
+$font-stack: Inter-Regular, Helvetica , Arial, sans-serif;
+$text-extra-large: 6vw;
+$text-larger: 5vw;
+$text-large: 4vw;
+$text-medium: 3vw;
+$text-small: 2vw;
+$text-smaller: 1.7vw;
+$text-extra-small: 1.4vw;
+
+$primary-text-color: #111;
+$second-text-color: #76aaac;
+$tertiary-text-color: #38bd49;
+
+// blanket stylings for views
+$active-opacity: .9;
+$passive-opacity: .4;
+
+$main-view-height: 50vh;
+$main-view-width: 45vw;
+$main-view-margin-top: 25vh;
+$main-view-gradient: linear-gradient(to bottom, $primary-color-light, $primary-color);
+
+$main-view-height-extended: 96vh;
+$main-view-width-extended: 60vw;
+$main-view-extended-top: 2vh;
+$extend-transition: all 200ms ease-in;
+
+$border-color: #2e8b9f;
+$border-width: 0.4vw;
+
+$border-highlight-color: #f26a7c;
+$background-hightlight-color: rgba(234, 234, 234, 0.7);
+
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
